@@ -10,6 +10,8 @@ const blogroute = require("./routes/blogroute");
 const productCategory = require("./routes/productCategory");
 const blogCategory = require("./routes/blogCategory");
 const brandroute = require("./routes/brandroute");
+const colorRoute = require("./routes/colorRoute");
+const contactRoute = require("./routes/contactroute");
 const couponRouter = require("./routes/couponRoute");
 const { notFound, errorHandler } = require('./middlewares/errorHandler');
 const cookiePaser = require('cookie-parser');
@@ -29,6 +31,9 @@ app.use('/api/productcategory', productCategory);
 app.use('/api/blogcategory', blogCategory);
 app.use('/api/brand', brandroute);
 app.use('/api/coupon', couponRouter);
+app.use('/api/color', colorRoute);
+app.use('/api/contact-us', contactRoute);
+
 
 app.use(notFound);
 app.use(errorHandler);

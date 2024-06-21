@@ -12,6 +12,8 @@ const cloudinaryuploadImg = async (fileToUploads) => {
             resolve(
                 {
                     url: result.secure_url,
+                    asset_id : result.asset_id,
+                    public_id: result.public_id,
                 },
                 {
                     resource_type: "auto",
@@ -21,6 +23,41 @@ const cloudinaryuploadImg = async (fileToUploads) => {
     });
 };
 
+const cloudinaryDeleteImg = async (fileToDelete) => {
+    return new Promise((resolve, reject) => {
+        cloudinary.uploader.destroy(fileToDelete, { resource_type: "auto" }, (error, result) => {
+            if (error) {
+                reject(error);
+            } else {
+                resolve({
+                    url: result.secure_url,
+                    asset_id: result.asset_id,
+                    public_id: result.public_id,
+                });
+            }
+        });
+    });
+};
 
 
-module.exports = cloudinaryuploadImg;
+/*
+const cloudinaryDeleteImg = async (fileToDelete) => {
+    return new Promise((resolve) => {
+        cloudinary.uploader.destroy(fileToDelete, (result) => {
+            resolve(
+                {
+                    url: result.secure_url,
+                    asset_id : result.asset_id,
+                    public_id: result.public_id,
+                },
+                {
+                    resource_type: "auto",
+                }
+            );
+        });
+    });
+}; */
+
+
+
+module.exports = {cloudinaryuploadImg, cloudinaryDeleteImg}
