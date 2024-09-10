@@ -1,7 +1,7 @@
 
 const asyncHandler = require("express-async-handler");
 const validateDBid =require("../utils/validateDBid");
-const Contact = require("../models/Contactmodel")
+const Contact = require("../models/contactmodel")
 
 //create Contact
 

@@ -1,0 +1,146 @@
+
+.header-top-strip {
+ background-color: var(--color-131921);
+ border-bottom: 1px solid var(--color-3b4149);
+}
+
+.header-upper {
+    background-color: var(--color-131921);
+}
+
+.header-upper .input-group-text {
+    background-color: var(--color-febd69);
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: inherit;
+}
+
+.header-upper .header-upper-links p{
+    color: white;
+    font-size: 10px;
+
+     }
+
+.header-upper .header-upper-links i{
+font-size: 2rem;
+color: white;
+}
+
+
+.header-upper .header-upper-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 5px;
+
+}
+
+.header-upper .header-upper-links .link-title{
+    padding: 12px 0 0 5px;
+}
+
+
+.header-bottom {
+    background-color: var(--color-232f3e);
+}
+
+.header-bottom2 {
+    background-color: var(--color-232f3e);
+}
+
+.header-bottom2 .input-group-text {
+    background-color: var(--color-febd69);
+}
+
+.gap-15 {
+    gap: 15px;
+}
+
+.sidebar-list{
+    display: none;
+}
+
+.header-bottom2 {
+    display: none;
+}
+
+@media (max-width: 850px) {
+    .site-logo {
+        font-size: 25px;
+    }
+    .header-upper .header-upper-links i{
+        font-size: 1.5rem;
+        
+    }
+
+    .header-upper .header-upper-links p{
+        color: white;
+        font-size: 7px;
+      
+    
+    }
+   
+
+}
+
+@media (max-width: 650px) {
+
+    .header-top-strip{
+        display: none;
+    }
+
+    .site-logo {
+        font-size: 25px;
+        margin-top: 3px;
+    }
+    
+    .col2 {
+        display: none;
+    }
+    
+  .custom-col {
+    display: flex;
+    width: 75%;
+    margin: 0 0 0 30px;
+    justify-content: end;
+    
+  }
+
+  .custom-small-badge {
+    font-size: 10px;
+    padding: 2px 5px;
+    border-radius: 5px;
+  }
+
+  .wish-compare {
+    display: none;
+  }
+ .header-upper-links{
+    gap: 1.5rem;
+ }
+ .sidebar-color {
+    background-color: var(--color-3b4149);
+ }
+ .sidebar-header-color {
+    background-color: var(--color-131921);
+ }
+
+ .text-color {
+    color: white;
+ }
+
+ .header-bottom {
+    display: none;
+}
+.sidebar-list{
+    display: block;
+}
+
+.header-bottom2 {
+    display: block;
+}
+
+};
+
