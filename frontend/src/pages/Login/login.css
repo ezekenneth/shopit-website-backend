@@ -1,8 +1,6 @@
-.vh-70 {
-    height: 70vh;
-}
 
-.input-form {
+
+.login-input {
     width: 300px;
     height: 40px;
     background-color: #f3f5f3;
@@ -10,11 +8,19 @@
 
 }
 
-.input-form::placeholder { 
+.login-input::placeholder { 
     color: #656665;  
 }
 
-.input-form:focus {
+.login-input:focus {
     border-color: tomato !important;
     outline: none;
+}
+
+.login-btn {
+    border-radius: 30px;
+    width: 300px;
+    height: 40px;
+    background-color: var(--color-131921);
+    color: white;
 }
