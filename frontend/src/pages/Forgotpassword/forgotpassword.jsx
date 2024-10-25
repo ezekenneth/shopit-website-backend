@@ -7,7 +7,7 @@ const forgotpassword = () => {
     <div>
 
       <div> 
-          <div className='login-container d-flex justify-content-center align-items-center vh-70'>
+          <div className='login-container d-flex justify-content-center align-items-center vh-100'>
               <div className="row">
                 <div className="col-12">
                   <div className="login-card d-flex flex-column justify-content-center align-items-center ">
